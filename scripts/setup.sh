@@ -6,7 +6,7 @@ termux-setup-storage
 apt update
 apt upgrade -y -o Dpkg::Options::="--force-confold"
 apt install -y x11-repo
-apt install -y tigervnc xfce4 xfce4-terminal termux-x11 nano wget curl pulseaudio pavucontrol 
+apt install -y tigervnc xfce4 xfce4-terminal termux-x11 nano wget curl pulseaudio pavucontrol gvfs
 
 # Install user apps
 apt install -y firefox chromium thunderbird xarchiver ristretto galculator evince mousepad vlc-qt ristretto
