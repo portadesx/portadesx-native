@@ -52,19 +52,19 @@ chmod 600 ~/.vnc/passwd
 
 echo '#!/data/data/com.termux/files/usr/bin/sh
 export PULSE_SERVER=127.0.0.1
-export DISPLAY=:1
+export DISPLAY=:6
 xfce4-session 
 # startlxqt
 # mate-session' >> ~/.vnc/xstartup
 chmod +x ~/.vnc/xstartup
 
 echo '#!/data/data/com.termux/files/usr/bin/sh
-vncserver -localhost -geometry 1280x1024
-echo 'VNC server address: 127.0.0.1:1 Password: 12345678' >> /data/data/com.termux/files/usr/bin/start
+vncserver :6 -geometry 1280x1024
+echo 'VNC server address: 127.0.0.1:6 Password: 12345678' >> /data/data/com.termux/files/usr/bin/start
 chmod +x /data/data/com.termux/files/usr/bin/startvnc
 
 echo '#!/data/data/com.termux/files/usr/bin/sh
-vncserver -kill :1' >> /data/data/com.termux/files/usr/bin/stop
+vncserver -kill :6' >> /data/data/com.termux/files/usr/bin/stop
 chmod +x /data/data/com.termux/files/usr/bin/stopvnc
 
 echo '#!/data/data/com.termux/files/usr/bin/sh
