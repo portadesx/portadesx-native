@@ -7,7 +7,7 @@
 - [Office Software](https://github.com/portadesx/portadesx-native/blob/main/docs/README.md#office-software)
 
 ### List of portadesx-native commands
-##### Termux Shell]
+##### Termux Shell
 - `portadesx-native-gui` - start X11 session
 - `portadesx-native-help` - print help message
 - `startvnc` - start vnc server
@@ -22,7 +22,7 @@ X11 session excells speed so you can expect no lagging on gestures or video play
 - Default VNC password is `12345678`
 
 ### Update existing installation 
-Usually that's always can be done with `apt update && apt upgrade -y' but if you want to keep configuration files, use `apt update && apt upgrade -y -o Dpkg::Options::="--force-confold"` instead
+Usually that's always can be done with `apt update && apt upgrade -y` but if you want to keep configuration files, use `apt update && apt upgrade -y -o Dpkg::Options::="--force-confold"` instead
 
 ### Upgrade to newer ubuntu release
 On PortadesX:Native updating package = upgrading installation because unlike Ubuntu used by other PortadesX editions, PortadesX:Native is running directly on Termux and the package is rolling release. And because of that nature, instability can occur usually on graphical environment unlike the other PortadesX editions, but rarely on command-line programs. 
