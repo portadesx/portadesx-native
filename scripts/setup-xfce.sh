@@ -3,13 +3,13 @@
 termux-setup-storage
 
 # Install xfce4 desktop environment, apps, and utility
-pkg update
+apt update
 apt upgrade -y -o Dpkg::Options::="--force-confold"
-pkg install -y x11-repo
-pkg install -y tigervnc xfce4 xfce4-terminal termux-x11 nano wget curl pulseaudio pavucontrol 
+apt install -y x11-repo
+apt install -y tigervnc xfce4 xfce4-terminal termux-x11 nano wget curl pulseaudio pavucontrol 
 
 # Install user apps
-pkg install -y firefox chromium thunderbird xarchiver ristretto galculator evince mousepad vlc-qt ristretto
+apt install -y firefox chromium thunderbird xarchiver ristretto galculator evince mousepad vlc-qt ristretto
 mkdir -p /data/data/com.termux/files/home/Desktop
 ln -s /data/data/com.termux/files/usr/share/applications/firefox.desktop /data/data/com.termux/files/home/Desktop/firefox.desktop
 ln -s /data/data/com.termux/files/usr/share/applications/chromium.desktop /data/data/com.termux/files/home/Desktop/chromium.desktop
