@@ -22,6 +22,7 @@ ln -s /data/data/com.termux/files/usr/share/applications/galculator.desktop /dat
 ln -s /data/data/com.termux/files/usr/share/applications/org.xfce.mousepad.desktop /data/data/com.termux/files/home/Desktop/org.xfce.mousepad.desktop\
 ln -s /data/data/com.termux/files/usr/share/applications/vlc.desktop /data/data/com.termux/files/home/Desktop/vlc.desktop
 ln -s /storage/emulated/0 /data/data/com.termux/files/home/Desktop/android_files
+wget https://raw.githubusercontent.com/portadesx/portadesx-native/refs/heads/main/scripts/office-online.desktop -P ~/Desktop
 
 # PulseAudio at startup on bash.bashrc
 echo 'LD_PRELOAD=/system/lib64/libskcodec.so
