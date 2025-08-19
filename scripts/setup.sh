@@ -39,6 +39,7 @@ export XDG_RUNTIME_DIR=/data/data/com.termux/files/usr/tmp
 kill -9 $(pgrep -f "termux.x11")\ 2>/dev/null
 kill -9 $(pgrep -f "X11")\ 2>/dev/null
 termux-x11 :0 >/dev/null &
+sleep 3
 export PULSE_SERVER=127.0.0.1
 DISPLAY=:0 xfce4-session
 # DISPLAY=:0 startlxqt
