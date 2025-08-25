@@ -19,7 +19,7 @@
 X11 session excells speed so you can expect no lagging on gestures or video playback, but this can't be zoomed so this is make smaller screen not too comfortable. Meanwhile VNC graphics is a bit lagging meanwhile doing a gesture or playing a video but VNC can be zoomed and give convenience for smaller screen user but with sacrificing performance
 
 ### Apps launch warning
-If you find out the warning when tried to launching application on desktop like this, simply click 'launch' since this warning aren't critical or dangerous.
+If you find out the warning when tried to launching application on desktop like this, simply click 'mark as secure and launch' since this warning aren't critical or dangerous.
 
 ![](https://github.com/portadesx/portadesx-screenshots/raw/f1eab1fe4e8b1d330d13f054995c791bab66ad00/termux-native/20250818/warning.jpg)
 
