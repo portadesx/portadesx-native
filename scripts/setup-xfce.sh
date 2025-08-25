@@ -9,7 +9,7 @@ apt install -y x11-repo
 apt install -y tigervnc xfce4 xfce4-terminal termux-x11 nano wget curl pulseaudio pavucontrol gvfs
 
 # Install user apps
-apt install -y firefox chromium thunderbird xarchiver ristretto galculator evince mousepad vlc-qt ristretto
+apt install -y firefox chromium thunderbird xarchiver ristretto galculator evince mousepad vlc-qt && apt remove file-roller && apt autoremove -y && apt clean
 mkdir -p /data/data/com.termux/files/home/Desktop
 ln -s /data/data/com.termux/files/usr/share/applications/firefox.desktop /data/data/com.termux/files/home/Desktop/firefox.desktop
 ln -s /data/data/com.termux/files/usr/share/applications/chromium.desktop /data/data/com.termux/files/home/Desktop/chromium.desktop
@@ -23,6 +23,8 @@ ln -s /data/data/com.termux/files/usr/share/applications/org.xfce.mousepad.deskt
 ln -s /data/data/com.termux/files/usr/share/applications/vlc.desktop /data/data/com.termux/files/home/Desktop/vlc.desktop
 ln -s /storage/emulated/0 /data/data/com.termux/files/home/Desktop/android_files
 wget https://raw.githubusercontent.com/portadesx/portadesx-native/refs/heads/main/scripts/office-online.desktop -P ~/Desktop
+chmod +x ~/Desktop/*.desktop
+chmod -R 775 ~/Desktop/
 
 # PulseAudio at startup on bash.bashrc
 echo 'LD_PRELOAD=/system/lib64/libskcodec.so
