@@ -43,9 +43,9 @@ kill -9 $(pgrep -f "X11")\ 2>/dev/null
 termux-x11 :0 >/dev/null &
 sleep 3
 export PULSE_SERVER=127.0.0.1
-DISPLAY=:0 xfce4-session
-# DISPLAY=:0 startlxqt
-# DISPLAY=:0 mate-session
+DISPLAY=:0 dbus launch --exit-with-session xfce4-session
+# DISPLAY=:0 dbus launch --exit-with-session startlxqt
+# DISPLAY=:0 dbus launch --exit-with-session mate-session
 EOF
 
 chmod +x /data/data/com.termux/files/usr/bin/portadesx-native-gui
@@ -57,9 +57,9 @@ chmod 600 ~/.vnc/passwd
 echo '#!/data/data/com.termux/files/usr/bin/sh
 export PULSE_SERVER=127.0.0.1
 export DISPLAY=:6
-xfce4-session 
-# startlxqt
-# mate-session' >> ~/.vnc/xstartup
+dbus launch --exit-with-session xfce4-session 
+# dbus launch --exit-with-session startlxqt
+# dbus launch --exit-with-session mate-session' >> ~/.vnc/xstartup
 chmod +x ~/.vnc/xstartup
 
 echo '#!/data/data/com.termux/files/usr/bin/sh
