@@ -63,7 +63,7 @@ dbus launch --exit-with-session xfce4-session
 chmod +x ~/.vnc/xstartup
 
 echo '#!/data/data/com.termux/files/usr/bin/sh
-vncserver :6 -geometry 1280x1024
+vncserver :6 -geometry 1600x1024
 echo 'VNC server address: 127.0.0.1:6 Password: 12345678' >> /data/data/com.termux/files/usr/bin/start
 chmod +x /data/data/com.termux/files/usr/bin/startvnc
 
